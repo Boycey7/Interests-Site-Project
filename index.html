@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
+        <!--Navbar-->
     <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-left px-4 py-2.5">
           <a href="#" class="flex items-center">
@@ -61,47 +61,104 @@
           </div>
         </div>
       </nav>
-      <body class="bg-gray-100 p-4">
-          <div class="max-w-screen-lg mx-auto bg-white p-6 rounded-lg shadow-lg relative">
-              <!-- Left Arrow Button -->
-              <button class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 p-10 rounded-full text-white hover:bg-opacity-70 transition duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-52 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                  </svg>
-              </button>
-              <!-- Right Arrow Button -->
-              <button class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-orange-400 bg-opacity-100 p-10 rounded-full text-white hover:bg-opacity-70 transition duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-52 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                  </svg>
-              </button>
-      
-              <!-- Carousel -->
-              <div class="relative">
-                  <img src="image1.jpg" alt="Image 1" class="w-full h-80 object-cover rounded-lg shadow-lg">
-                  <a href="page1.html" class="absolute left-0 right-0 bottom-0 top-0"></a> <!-- Link to page 1 -->
-              </div>
-      
-              <!-- Read More Button -->
-              <a href="page1.html" class="absolute left-4 bottom-4 bg-orange-400 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">
-                  Read More
-              </a>
-          </div>
-      </body>
-      
- <div>
-        <body>
-            <main class="bg-slate-200 md:w-2/3 lg:w-3/4 px-5 py-40">
-                <h1 class="text-2xl md:text-4xl">Sub Content</h1>
-            </main>
+      <body>
         
-            <footer class="bg-slate-900 mt-auto p-5">
-                <h1 class="text-2xl md:text-4xl text-white">Footer</h1>
-            </footer>
-        </body>
+        <div class="max-w-screen-lg mx-auto relative">
+            <!-- Carousel -->
+            <div class="relative">
+                <!-- Carousel Container -->
+                <div id="imageCarousel" class="relative overflow-hidden h-96 flex">
+                  <!-- Image Items and text-->
+                  <div class="w-full h-full absolute transition-transform duration-500 ease-in-out">
+                      <img src="https://wallpapercave.com/wp/wp9435801.jpg" alt="Image 1" class="w-full h-full object-cover shadow-lg">
+                      <h1 class="absolute inset-x-[15%] bottom-14 hidden py-8 text-center text-lg text-white md:block drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">One Piece</h1>
+                      <p class="absolute inset-x-[35%] bottom-6 hidden text-center text-xs text-white outline-red-900 md:block drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Follows the adventures of Monkey D. Luffy and his pirate crew in order to find the greatest treasure ever left by the legendary Pirate, Gold Roger. The famous mystery treasure named "One Piece".</p>
+                         <!-- copyright Button (bottom-right) -->
+            <button class="absolute right-4 bottom-4 bg-black bg-opacity-50 text-white text-xs rounded px-1 py-1">Toei Animation | Fuji TV</button>
+                  </div>
+                  <div class="w-full h-full absolute transition-transform duration-500 ease-in-out">
+                    <img src="https://wallpapercave.com/wp/wp12029622.jpg" alt="Image 2" class="w-full h-full object-cover shadow-lg">
+                    <h1 class="absolute inset-x-[15%] bottom-14 hidden py-8 text-center text-lg text-white md:block drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Jujutsu Kaisen</h1>
+                    <p class="absolute inset-x-[35%] bottom-6 hidden text-center text-xs text-white outline-red-900 md:block drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman's school to be able to locate the demon's other body parts and thus exorcise himself.</p>
+                     <!-- copyright Button (bottom-right) -->
+            <button class="absolute right-4 bottom-4 bg-black bg-opacity-50 text-white text-xs rounded px-1 py-1">MAPPA | TOHO Animation</button>
+                </div>
+                <div class="w-full h-full absolute transition-transform duration-500 ease-in-out">
+                    <img src="https://wallpapercave.com/wp/wp4735514.jpg" alt="Image 3" class="w-full h-full object-cover shadow-lg">
+                    <h1 class="absolute inset-x-[15%] bottom-14 hidden py-8 text-center text-lg text-white md:block drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">My Hero Academia</h1>
+                    <p class="absolute inset-x-[35%] bottom-6 hidden text-center text-xs text-white outline-red-900 md:block drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">A superhero-admiring boy without any powers enrolls in a prestigious hero academy and learns what it really means to be a hero.</p>
+                     <!-- copyright Button (bottom-right) -->
+            <button class="absolute right-4 bottom-4 bg-black bg-opacity-50 text-white text-xs rounded px-1 py-1">Bones | TOHO Animation</button>
+                </div>
+                <div class="w-full h-full absolute transition-transform duration-500 ease-in-out">
+                    <img src="https://wallpapercave.com/wp/wp6341982.jpg" alt="Image 4" class="w-full h-full object-cover shadow-lg">
+                    <h1 class="absolute inset-x-[15%] bottom-14 hidden py-8 text-center text-lg text-white md:block drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Dragon Ball Super</h1>
+                    <p class="absolute inset-x-[35%] bottom-6 hidden text-center text-xs text-white outline-red-900 md:block drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Six months after the defeat of Majin Buu, The mighty Saiyan Son Goku continues his quest on becoming stronger.</p>
+                     <!-- copyright Button (bottom-right) -->
+            <button class="absolute right-4 bottom-4 bg-black bg-opacity-50 text-white text-xs rounded px-1 py-1">Toei Animation | Fuji TV</button>
+                </div>
+                <div class="w-full h-full absolute transition-transform duration-500 ease-in-out">
+                    <img src="https://wallpapercave.com/wp/wp12712623.jpg" alt="Image 5" class="w-full h-full object-cover shadow-lg">
+                    <h1 class="absolute inset-x-[15%] bottom-14 hidden py-8 text-center text-lg text-white md:block drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Hunter x Hunter</h1>
+                    <p class="absolute inset-x-[35%] bottom-6 hidden text-center text-xs text-white outline-red-900 md:block drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Gon Freecss aspires to become a Hunter, an exceptional being capable of greatness. With his friends and his potential, he seeks out his father, who left him when he was younger.</p>
+                     <!-- copyright Button (bottom-right) -->
+            <button class="absolute right-4 bottom-4 bg-black bg-opacity-50 text-white text-xs rounded px-1 py-1">Madhouse | Shueisha</button>
+                </div>
+            </div>
+    
+                <!-- Left Arrow Button -->
+                <button id="prevButton" class="absolute left-4 bottom-8 bg-black bg-opacity-90 p-6 rounded-l-lg text-white hover:bg-opacity-70 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-24 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+    
+                     <!-- Right Arrow Button -->
+            <button id="nextButton" class="absolute left-40 bottom-8 bg-orange-400 bg-opacity-90 p-6 rounded-r-lg text-white hover:bg-opacity-70 transition duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-24 h-8">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+                  </button>
+            
+                 <!-- Read More Button top -->
+          <a href="page1.html" class="absolute left-4 top-4 bg-orange-400 text-white px-4 py-2 rounded-lg hover:bg-black transition duration-300">
+            Read More
+        </a>
 
+        
+      
+        <!--Javascript for Carousel-->
+        <script>
+            const imageCarousel = document.getElementById('imageCarousel');
+            const prevButton = document.getElementById('prevButton');
+            const nextButton = document.getElementById('nextButton');
+            const images = imageCarousel.querySelectorAll('div');
+            let currentImageIndex = 0; // Start with Image 1
 
-    </div>
+            function showImage(index) {
+    images.forEach((image, i) => {
+        const translateXValue = (i - index) * 100;
+        image.style.transform = `translateX(${translateXValue}%)`;
+    });
+    }
+
+           function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+    }
+
+          function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+    }
+
+    showImage(currentImageIndex);
+
+    prevButton.addEventListener('click', prevImage);
+    nextButton.addEventListener('click', nextImage);
+      </script>
+    </body>    
+    
     
 </body>
 </html>
